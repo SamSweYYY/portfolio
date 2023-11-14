@@ -1,0 +1,27 @@
+h1 { 
+    border :1px solid black;
+    background-color:white;
+}
+
+p {
+    color: white;
+    background-color: grey;
+    border: 2px solid rgb(0, 217, 255);
+}
+
+nav{
+    list-style-type: none;
+    float : right;
+    padding: 5px; 
+}
+
+img{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    border: 5px solid yellow;
+}
+
+button{ 
+    width: 200px;
+}

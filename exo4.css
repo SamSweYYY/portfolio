@@ -1,0 +1,98 @@
+h1{
+    border: 2px dotted red; 
+    text-align:center;
+    font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20pt;
+}
+
+p {
+    float: left;
+    width: 200px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+  }
+
+  nav {
+    width : 100%;
+    margin : 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  nav ul li {
+    float: center; 
+    width: 25%;
+    text-align: center;
+  }
+
+  nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  nav a:hover{
+    color:orange;
+    border-bottom: 2px solid gold;
+    width: 500px;
+  }
+/* couleur de fond pour les sous menus*/
+  .sous{ 
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+  }
+/* aficher les sous menus uniquement qd on passe la souris dessus*/
+  nav > ul li:hover .sous{
+    display: block;
+  }
+/* éléments du sous menus les 1 en dessous des autres*/
+  .sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+  .sous a{
+    padding: 10px;
+    border-bottom: none;
+  }
+
+  .sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+  }
+/* pour montrer que le menu est déroulant*/
+  .deroulant > a::after{
+    content:"▼";
+    font-size: 12px;
+  }
+
+  .sous{
+    display: none; 
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width : 100%;
+    z-index: 1000;
+  
+  }
+/* sous menus de meme et placés sous les onglets */
+  nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+  }
+
+
+  h2{
+   color: green;
+   text-decoration: underline;
+   text-shadow: 2px 2px 5px green;
+  }
